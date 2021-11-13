@@ -1,4 +1,4 @@
-backend:
+tbackend:
   name: git-gateway
 
 media_folder: source/images/uploads
@@ -8,8 +8,8 @@ public_folder: /images/uploads
 
 collections:
   #yaml middleman data example
-  - name: product
-    label: Product
+  - name: features
+    label: Features
     format: yml
     extension: yml
     folder: data/products/

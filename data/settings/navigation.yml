@@ -3,5 +3,5 @@ nav_items:
     path: /
   - label: Features
     path: /products/
-  - label: News
+  - label: Pricing
     path: /news

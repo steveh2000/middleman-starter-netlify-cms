@@ -8,21 +8,21 @@ public_folder: /images/uploads
 
 collections:
   #yaml middleman data example
-  - name: features
-    label: Features
-    format: yml
-    extension: yml
-    folder: data/products/
-    create: true
-    slug: '{{title}}'
-    fields:
-      - {label: Title, name: title, widget: string, required: true}
-      - {label: Publish Date, name: date, widget: datetime}
-      - {label: Image, name: image, widget: image, required: true}
-
-      - {label: Weight, name: weight, widget: number}
-      - {label: Price, name: price, widget: number}
-      - {label: Body, name: body, widget: markdown}
+#  - name: features
+#    label: Features
+#    format: yml
+#    extension: yml
+#    folder: data/products/
+#    create: true
+#    slug: '{{title}}'
+#    fields:
+#      - {label: Title, name: title, widget: string, required: true}
+#      - {label: Publish Date, name: date, widget: datetime}
+#      - {label: Image, name: image, widget: image, required: true}
+#
+#      - {label: Weight, name: weight, widget: number}
+#      - {label: Price, name: price, widget: number}
+#      - {label: Body, name: body, widget: markdown}
 
 #markdown middleman blog example
   - name: blog

@@ -1,12 +1,12 @@
-window.onscroll = function() {scrollFunction()};
+// window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-        document.getElementById("header").classList.add('scroll-shrink');
-    } else {
-        document.getElementById("header").classList.remove('scroll-shrink');
-    }
-}
+// function scrollFunction() {
+//     if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+//         document.getElementById("header").classList.add('scroll-shrink');
+//     } else {
+//         document.getElementById("header").classList.remove('scroll-shrink');
+//     }
+// }
 
 function showPopUp(event) {
     event.preventDefault();

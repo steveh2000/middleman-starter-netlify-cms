@@ -18,20 +18,11 @@ section.pd-0.pos-rel.bdr-b.bdr-op-1.bg-color2[data-rgen-sm="h-reset"]
       img[src="img/device-group.png" alt="image"]
       hr.light.mr-tb-40[data-rgen-sm="mr-tb-20"]
       .mr-t-60.mr-auto.align-c
-        a.btn.btn-white.solid.bdr-2.bold-n.min-px-w220.mr-6[href="https://apps.apple.com/us/app/narrative-writer/id1492724959" data-rgen-sm="medium"]
-          i.fa.fa-apple.fs26.btn-icon
-          span.btn-txt.txt-upper
-            | App Store
-        a.btn.btn-white.solid.bdr-2.bold-n.min-px-w220.mr-6[href="https://play.google.com/store/apps/details?id=app.gonarrative.narrative&hl=en_US&gl=US" data-rgen-sm="medium"]
-          i.fa.fa-android.fs26.btn-icon
-          span.btn-txt.txt-upper
-            | Android
-        a.btn.btn-white.solid.bdr-2.bold-n.min-px-w220.mr-6[href="https://www.microsoft.com/en-us/p/narrative-writer/9phgbh0f25ch#activetab=pivot:overviewtab" data-rgen-sm="medium"]
-          i.fa.fa-windows.fs26.btn-icon
-          span.btn-txt.txt-upper
-            | Windows
-        a.btn.btn-white.solid.bdr-2.bold-n.min-px-w220.mr-6[href="https://app.gonarrative.app" data-rgen-sm="medium"]
-          i.fa.fa-globe.fs26.btn-icon
-          span.btn-txt.txt-upper
-            | Web App
+        - data.store_links.sort {|(_filename_a, a),(_filename_b, b)| a.order <=> b.order}.each do | _filename, store_link |
+
+          a.btn.btn-white.solid.bdr-2.bold-n.min-px-w220.mr-6[href=store_link.href data-rgen-sm="medium"]
+            i[class="fa #{store_link.icon} fs26 btn-icon"]
+            span.btn-txt.txt-upper
+              = store_link.title
+
   b.full-wh[data-gradient="y" data-g-colors="rgba(0, 0, 0, 0.1)|rgba(0, 0, 0, 0.4)" style="background: rgba(0, 0, 0, 0) linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%) repeat scroll 0% 0%;"]

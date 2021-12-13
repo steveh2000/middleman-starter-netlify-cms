@@ -70,6 +70,10 @@ helpers do
   end
 end
 
+page "/privacy.html", :directory_index => false
+page "/terms.html", :directory_index => false
+page "/data-deletion.html", :directory_index => false
+
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 

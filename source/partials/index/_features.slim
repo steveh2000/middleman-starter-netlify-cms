@@ -5,99 +5,21 @@ section.pos-rel.pd-tb-medium[data-rgen-sm="pd-tb-small"]
         | Packed with features
       p.title-sub[data-rgen-sm="small"]
         | Narrative will help you write your novel
-    .pd-30.rd-5.bg-gray2.mr-b-80[data-rgen-sm="pd-20"]
-      .row.gt40
-        .col-md-4
-          .info-obj.img-l.g20.mini.mr-0
-            .img
-              span.iconwrp.txt-color2
-                i.pe-7s-cloud
-            .info
-              h3.title.tiny.mr-b-10.bold-n
-                | Work offline
-              p
-                | Write offline or online. Your book is saved on your device, and backs up to the cloud.
-        .col-md-4
-          .info-obj.img-l.g20.mini.mr-0
-            .img
-              span.iconwrp.txt-color2
-                i.pe-7s-phone
-            .info
-              h3.title.tiny.mr-b-10.bold-n
-                | Multi-Platform
-              p
-                | Access your work from your phone, tablet, or desktop. Synchronisation is automated.
-        .col-md-4
-          .info-obj.img-l.g20.mini.mr-0
-            .img
-              span.iconwrp.txt-color2
-                i.pe-7s-glasses
-            .info
-              h3.title.tiny.mr-b-10.bold-n
-                | Proofreader
-              p
-                | Check your spelling and grammar in several languages. Checked when you are online, review either offline or online.
-    .pd-30.rd-5.bg-gray2.mr-b-80[data-rgen-sm="pd-20"]
-      .row.gt40
-        .col-md-4
-          .info-obj.img-l.g20.mini.mr-0
-            .img
-              span.iconwrp.txt-color2
-                i.pe-7s-refresh
-            .info
-              h3.title.tiny.mr-b-10.bold-n
-                | Versions
-              p
-                | Keeps a regular track of the history for each chapter. Your words are safe in case you rewrite or change your mind!
-        .col-md-4
-          .info-obj.img-l.g20.mini.mr-0
-            .img
-              span.iconwrp.txt-color2
-                i.pe-7s-graph1
-            .info
-              h3.title.tiny.mr-b-10.bold-n
-                | Detailed Statistics
-              p
-                | Keeps count of the number of words you write. Find out your most productive time of day.
-        .col-md-4
-          .info-obj.img-l.g20.mini.mr-0
-            .img
-              span.iconwrp.txt-color2
-                i.pe-7s-search
-            .info
-              h3.title.tiny.mr-b-10.bold-n
-                | Focus Mode
-              p
-                | Fade out everything except your words so you can concentrate on your writing.
-    .pd-30.rd-5.bg-gray2[data-rgen-sm="pd-20"]
-      .row.gt40
-        .col-md-4
-          .info-obj.img-l.g20.mini.mr-0
-            .img
-              span.iconwrp.txt-color2
-                i.pe-7s-cloud-upload
-            .info
-              h3.title.tiny.mr-b-10.bold-n
-                | Backups
-              p
-                |  Connect to Dropbox or Google Drive to backup your work as a word document after every writing session.
-        .col-md-4
-          .info-obj.img-l.g20.mini.mr-0
-            .img
-              span.iconwrp.txt-color2
-                i.pe-7s-diskette
-            .info
-              h3.title.tiny.mr-b-10.bold-n
-                | Export
-              p
-                |  Save your work as text, MS Word, ePub to share or publish.
-        .col-md-4
-          .info-obj.img-l.g20.mini.mr-0
-            .img
-              span.iconwrp.txt-color2
-                i.pe-7s-paperclip
-            .info
-              h3.title.tiny.mr-b-10.bold-n
-                | Notes
-              p
-                |  Scratchpad chapters to keep general notes, character profiles, or rough ideas.
+
+        - rows = (data.features.length/3).floor
+        - for i in 0..2
+          .pd-30.rd-5.bg-gray2.mr-b-80[data-rgen-sm="pd-20"]
+            .row.gt40
+
+              - data.features.sort {|(_filename_a, a),(_filename_b, b)| a.order <=> b.order}[i*3, 3].each do | _filename, feature |
+
+                .col-md-4
+                  .info-obj.img-l.g20.mini.mr-0
+                    .img
+                      span.iconwrp.txt-color2
+                        i[class=feature.icon]
+                    .info
+                      h3.title.tiny.mr-b-10.bold-n
+                        = feature.title
+                      p
+                        = feature.body

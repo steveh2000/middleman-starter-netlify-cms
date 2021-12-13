@@ -1,26 +1,47 @@
-footer
-  = partial 'partials/shared/header-primary'
-
-    nav.navigation
-      ul
-        - data.settings.navigation.nav_items.each do | nav_item |
+footer.pd-t-small.pos-rel[data-rgen-sm="pd-tb-small align-c"]
+  .container.pos-rel.z1
+    .row.gt20.mb40
+      .col-md-2
+        h2.title.tiny.bold-n
+          | QUICK LINKS
+        hr.mr-tb-20
+        ul.list-1
           li
-            = nav_link nav_item.label, nav_item.path
-  
-  .footer-content
-    .container-fluid
-      .row
-        .newsletter
-          form
-            label for="email" Sign up for our newsletter
-            input type="email" name="email" placeholder="Your email address"
-            button type="submit" Submit
-
-        .social
-          .icons
-            = link_to '#'
-              = image_tag "social/facebook.svg"
-            = link_to '#'
-              = image_tag "social/twitter.svg"
-            = link_to 'https://github.com/tomrutgers/middleman-starter-netlify-cms'
-              = image_tag "social/github.svg"
+            a[href="https://app.gonarrative.app"]
+              | Sign up
+          li
+            a[href="#pricing"]
+              | Plans & pricing
+          li
+            a[href="terms.html"]
+              | Terms & Conditions
+          li
+            a[href="privacy.html"]
+              | Privacy Policy
+        hr.mr-tb-20
+        span
+          |  © Narrative 2020
+      .col-md-3.offset-md-2
+        h2.title.tiny.bold-n
+          | GET IN TOUCH
+        hr.mr-tb-20
+        a.sq40.fs16.mr-r-4.rd.inline-flex.flex-cc.bdr-2.solid.btn-color2[href="https://twitter.com/Narrative_App" target="_blank"]
+          i.fa.fa-twitter
+        a.sq40.fs16.mr-r-4.rd.inline-flex.flex-cc.bdr-2.solid.btn-color2[href="mailto:hello@gonarrative.app" target="_blank"]
+          i.fa.fa-envelope
+        hr.mr-tb-20
+      .col-md-4.offset-1
+        h2.title.tiny.bold-n
+          | NEWSLETTERS
+        hr.mr-tb-20
+        p
+          | Subscribe to our monthly newsletter to stay updated
+        .form-block
+          form.mc-form[action="https://gmail.us19.list-manage.com/subscribe/post?u=2549d2b17ce406802f2267e45&amp;id=d74dc1a1df" method="post" target="_blank"]
+            .field-wrp
+              .form-group
+                input.form-control.bg-white.bdr-2[type="email" value="" placeholder="Enter your email" name="EMAIL" required]
+            div[style="position: absolute; left: -5000px;" aria-hidden="true"]
+              input[type="text" name="b_2549d2b17ce406802f2267e45_d74dc1a1df" tabindex="-1" value=""]
+            button.btn.solid.btn-dark1.mr-b-10[type="submit" name="subscribe"]
+              | SUBSCRIBE

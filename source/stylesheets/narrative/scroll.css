@@ -1,0 +1,35 @@
+.nav-wrp .navbar-brand {
+    font-family: 'NeoSansItalic', sans-serif;
+    color: white;
+    font-style: italic;
+    font-size: 42px;
+    padding-top: 10px;
+    height: auto
+}
+
+.nav {
+    display: inline-block;
+    text-align: left;
+    padding-right: 12px;
+    padding-top: 10px;
+    transition: padding-top 0.25s ease-in-out;
+}
+
+.scroll-shrink .nav {
+    padding-top: 0;
+}
+
+#header {
+    min-height: 60px;
+    transition: min-height 0.25s ease-in-out;
+}
+
+#header.scroll-shrink {
+    min-height: 40px;
+}
+
+#header.scroll-shrink.nav-wrp .navbar-brand {
+    font-size: 26px;
+    padding-top: 12px;
+    padding-bottom: 0;
+}

@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'QuickSand';
+    src: local('QuickSand'), url(../fonts/Quicksand.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'NeoSans';
+    font-weight: 300;
+    font-style: normal;
+    src: local('NeoSans'), url(../fonts/NeoSans-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NeoSans';
+    font-weight: 300;
+    font-style: italic;
+    src: local('NeoSans'), url(../fonts/NeoSans-LightItalic.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NeoSans';
+    font-weight: 400;
+    font-style: normal;
+    src: local('NeoSans'), url(../fonts/NeoSans.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NeoSansItalic';
+    font-weight: 400;
+    font-style: italic;
+    src: local('NeoSans'), url(../fonts/NeoSans-Italic.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NeoSans';
+    font-weight: 500;
+    font-style: normal;
+    src: local('NeoSans'), url(../fonts/NeoSans-Medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NeoSans';
+    font-weight: 500;
+    font-style: italic;
+    src: local('NeoSans'), url(../fonts/NeoSans-MediumItalic.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NeoSans';
+    font-weight: 600;
+    font-style: normal;
+    src: local('NeoSans'), url(../fonts/NeoSans-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NeoSans';
+    font-weight: 600;
+    font-style: italic;
+    src: local('NeoSans'), url(../fonts/NeoSans-BoldItalic.otf) format('opentype');
+}

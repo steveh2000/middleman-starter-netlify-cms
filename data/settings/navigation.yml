@@ -1,7 +1,5 @@
 nav_items:
-  - label: Home
-    path: /
   - label: Features
-    path: /products/
+    path: \#features
   - label: Pricing
-    path: /news
+    path: \#pricing

@@ -10,12 +10,11 @@ nav#header.nav-wrp.light.nav-1.navbar-fixed-top[data-glass="y" data-sticky="y"]
       .col-md-9.align-r
         .nav
           ul.nav-links.sf-menu.sf-js-enabled.sf-arrows[style="touch-action: pan-y;"]
-            li
-              a[href="#features"]
-                | Features
-            li
-              a[href="#pricing"]
-                | Pricing
+            - data.settings.navigation.nav_items.each do | nav_item |
+              li
+                a href=nav_item.path
+                  = nav_item.label
+
           .nav-other
             a.btn.btn-default.light.mini[href="https://app.gonarrative.app/"]
               | SIGN UP
